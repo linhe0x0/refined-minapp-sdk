@@ -9,7 +9,7 @@
     "test": "ava",
     "test:cov": "nyc ava",
     "type-check": "tsc --noEmit",
-    "lint": "eslint --ext ts src"
+    "lint": "eslint --ext .ts src"
   },
   "repository": {
     "type": "git",
