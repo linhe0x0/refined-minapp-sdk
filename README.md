@@ -6,7 +6,8 @@ A helper wrapped on the top of wechat-minapp sdk to make it more developer-frien
 
 - Typed all api based on TypeScript
 - Promisify all api
-- flatten key params like `wx.getStorage({ key: '' })` => `wx.getStorage('key')`
+- Flatten key params like `wx.getStorage({ key: '' })` => `wx.getStorage('key')`
+- Replace wx error with standard built-in `Error` object
 
 ## Example
 
@@ -32,7 +33,7 @@ wx.getStorage('local_token')
     console.log(res)
   })
   .catch((err) => {
-    console.error(err.errMsg)
+    console.error(err.message)
   })
 ```
 

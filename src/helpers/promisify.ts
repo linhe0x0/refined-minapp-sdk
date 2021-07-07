@@ -11,11 +11,22 @@ export function promisify<TResult>(
         }
       }
 
-      const handleFail = (err: Error) => {
-        reject(err)
+      const handleFail = (err: any) => {
+        const error =
+          err instanceof Error ? err : new Error(err.errMsg || err.message)
+
+        if (!error.message) {
+          error.message = err.errMsg || err.message
+        }
+
+        Object.assign(error, {
+          originalError: err,
+        })
+
+        reject(error)
 
         if (data.fail) {
-          data.fail(err)
+          data.fail(error)
         }
       }
 
