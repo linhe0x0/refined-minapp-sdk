@@ -40,3 +40,25 @@ wx.getStorage('local_token')
 ### With VSCode IntelliSense
 
 ![](./static/intellisense.png)
+
+## TODO
+
+- [ ] 基础
+- [ ] 路由
+- [ ] 跳转
+- [ ] 转发
+- [ ] 界面
+- [ ] 网络
+- [ ] 支付
+- [ ] 数据缓存
+- [ ] 数据分析
+- [ ] 画布
+- [ ] 媒体
+- [ ] 位置
+- [ ] 文件
+- [ ] 开放接口
+- [ ] 设备
+- [ ] Worker
+- [ ] WXML
+- [ ] 第三方平台
+- [ ] 广告
