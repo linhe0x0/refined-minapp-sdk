@@ -1,0 +1,11 @@
+{
+  "extends": "@sqrtthree/tsconfig",
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "typeRoots": ["./typings", "node_modules/@types"],
+    "removeComments": false
+  },
+  "include": ["src/**/*", "typings/**/*"],
+  "exclude": ["node_modules"]
+}
