@@ -30,10 +30,11 @@ export function promisify<TResult>(
         }
       }
 
-      const payload = Object.assign({}, data, {
+      const payload = {
+        ...data,
         success: handleSuccess,
         fail: handleFail,
-      })
+      }
 
       fn(payload)
     })
