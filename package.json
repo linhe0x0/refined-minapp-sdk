@@ -24,6 +24,7 @@
   "homepage": "https://github.com/sqrthree/refined-minapp-sdk#readme",
   "devDependencies": {
     "@sqrtthree/eslint-config-base": "~0.1.1",
+    "@sqrtthree/prettier-config": "~2.0.1",
     "@sqrtthree/tsconfig": "~1.0.0",
     "@types/node": "~16.0.0",
     "@typescript-eslint/eslint-plugin": "~4.28.2",
