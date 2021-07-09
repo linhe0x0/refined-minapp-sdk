@@ -1,17 +1,17 @@
 # refined-minapp-sdk
 
-A helper wrapped on the top of wechat-minapp sdk to make it more developer-friendly.
+对微信小程序 API 的封装，对开发更友好。
 
-## Principles
+## 核心原则
 
-- Typed all api based on TypeScript
-- Promisify all api
-- Flatten key params like `wx.getStorage({ key: '' })` => `wx.getStorage('key')`
-- Replace wx error with standard built-in `Error` object
+- 基于 TypeScript 进行类型补全。
+- 全部 Promise 化
+- 将部分关键参数扁平化提取，例如 `wx.getStorage({ key: '' })` => `wx.getStorage('key')`
+- 使用 JS 内置的标准 `Error` 对象替换掉微信小程序的错误对象。
 
-## Example
+## 例如
 
-Original:
+官方原始调用方式：
 
 ```js
 wx.getStorage({
@@ -25,7 +25,7 @@ wx.getStorage({
 })
 ```
 
-Now:
+现在：
 
 ```js
 wx.getStorage('local_token')
@@ -37,7 +37,7 @@ wx.getStorage('local_token')
   })
 ```
 
-### With VSCode IntelliSense
+### VSCode 代码提示展示
 
 ![](./static/intellisense.png)
 
